@@ -10,7 +10,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		TextView txt=new TextView(this);
-		txt.setText(stringFromJNI());
+		//add new operation ,
+		txt.setText("测试:"+stringFromJNI());
 		setContentView(txt);
 	}
 	public native String  stringFromJNI();
